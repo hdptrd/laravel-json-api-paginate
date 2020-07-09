@@ -10,7 +10,7 @@ class JsonApiPaginateServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        if ($this->app->runningInConsole()) {
+        if ($this->app->runningInConsole() && function_exists('config_path')) {
             $this->publishes([
                 __DIR__.'/../config/json-api-paginate.php' => config_path('json-api-paginate.php'),
             ], 'config');
