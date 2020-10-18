@@ -10,9 +10,7 @@ This package adds a `jsonPaginate` method to the Eloquent query builder that lis
 
 ## Support us
 
-Learn how to create a package like this one, by watching our premium video course:
-
-[![Laravel Package training](https://spatie.be/github/package-training.jpg)](https://laravelpackage.training)
+[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-json-api-paginate.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-json-api-paginate)
 
 We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
 
@@ -74,6 +72,12 @@ return [
      * The name of the macro that is added to the Eloquent query builder.
      */
     'method_name' => 'jsonPaginate',
+
+    /*
+     * If you only need to display Next and Previous links, you may use
+     * simple pagination to perform a more efficient query.
+     */
+    'use_simple_pagination' => false,
 
     /*
      * Here you can override the base url to be used in the link items.
